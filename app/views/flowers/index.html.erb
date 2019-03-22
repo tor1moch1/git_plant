@@ -1,5 +1,8 @@
 <div class="contents row" >
   <% @diaries.each do |diary| %>
-    <p><%= diary.message %></p>
+    <div class="content_post" style="background-image: url(<%= diary.day_image %>);">
+      <%= simple_format(diary.message) %>
+      <span class="name"><%= diary.User_nickname %></span>
+    </div>
   <% end %>
 </div>
