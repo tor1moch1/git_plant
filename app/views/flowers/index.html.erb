@@ -2,6 +2,7 @@
   <% @diaries.each do |diary| %>
     <div class="content_post" style="background-image: url(<%= diary.day_image %>);">
       <%= simple_format(diary.message) %>
+      <%= diary.created_at %>
       <span class="name"><%= diary.User_nickname %></span>
     </div>
   <% end %>

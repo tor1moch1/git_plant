@@ -4,4 +4,7 @@ class FlowersController < ApplicationController
     @diaries = Diary.all
   end
 
+  def new
+  end
+
 end
