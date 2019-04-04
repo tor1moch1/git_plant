@@ -7,4 +7,8 @@ class FlowersController < ApplicationController
   def new
   end
 
+  def create
+    Flower.create(User_nickname: "", day_image: "", message: "")
+  end
+
 end
