@@ -1,7 +1,7 @@
 class FlowersController < ApplicationController
   
   def index
-    @diaries = Diary.all
+    @diaries = Diary.all.order("id DESC")
   end
 
   def new
