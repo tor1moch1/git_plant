@@ -8,7 +8,12 @@ class FlowersController < ApplicationController
   end
 
   def create
-    Flower.create(User_nickname: "", day_image: "", message: "")
+    Diary.create(diary_params)
+  end
+
+  private
+  def diary_params
+    params.permit(:User_nickname, :day_image, :message)
   end
 
 end
