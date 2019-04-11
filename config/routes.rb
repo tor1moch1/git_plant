@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #devise_for :users
   root  'flowers#index'                       #ルートパスの指定
   resources :flowers                     #flowers_controllerに対してのresourcesメソッド
